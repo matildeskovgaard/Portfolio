@@ -1,0 +1,137 @@
+body {
+  background-color: #E7EAEF;
+}
+
+ul {
+  font-size: 25px;
+  font-family: helvetica letter-spacing: 25%;
+  border: none;
+  outline: none;
+  height: -5%;
+  margin: 0%;
+  text-align: right;
+}
+
+h1 {
+  font-family: helvetica;
+  font-size: 70px;
+  font-weight: bold;
+  color: #E7EAEF;
+  text-align: center;
+  background-color: #D9B5AD;
+}
+
+.cv {
+padding: left
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.body .html {
+  height: 70%;
+  margin: 0;
+  font-family: helvetica;
+}
+
+.tablink {
+  background-color: #BFAAA3;
+  color: #E7EAEF;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  font-family: helvetica
+}
+
+.tablink:hover {
+  background-color: #D9B5AD;
+  font-family: helvetica
+}
+
+.tabcontent {
+  color: #E7EAEF;
+  display: none;
+  padding: 100px 20px;
+  height: 100%
+}
+
+.container {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #E7EAEF;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: helvetica;
+}
+
+input[type=submit] {
+  background-color: #E7EAEF;
+  color: #D9B5AD;
+  padding: 20px 30px;
+  border: none;
+  cursor: pointer;
+  font-family: helvetica;
+}
+
+input[type=submit]:hover {
+  background-color: #E7EAEF;
+  font-family: helvetica;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: #D9B5AD;
+  padding: 20px;
+  font-family: helvetica;
+}
+
+.column {
+  float: left;
+  width: 80%;
+  margin-top: 6px;
+  padding: 20px;
+  font-family: helvetica;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  font-family: helvetica;
+}
+
+@media screen and (max-width: 20px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    font-family: helvetica;
+  }
+}
+
+
+#Home {
+  background-color: #D9B5AD;
+  font-family: helvetica;
+}
+
+#CV {
+  background-color: #D9B5AD;
+  font-family: helvetica;
+}
+
+#Work {
+  background-color: #D9B5AD;
+  font-family: helvetica;
+}
+
+#Contact {
+  background-color: #D9B5AD;
+  font-family: helvetica;
+}

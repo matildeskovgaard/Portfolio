@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="css/all.css">
+
+</head>
+
+
+<body>
+
+  <img class="profile-img" src="logo.png" alt="logo">
+  <ul class="social">
+
+    <i id="instagram" class="fab fa-instagram"></i>
+    <i id="facebook" class="fab fa-facebook-f"></i>
+    <i id="linkedin" class="fab fa-linkedin"></i>
+    <i id="snabela" class="fas fa-at"></i>
+    <i id="adresscard" class="far fa-address-card"></i>
+  </ul>
+
+
+  <button class="tablink" , onclick="openPage('Home', this, '#D9B5AD')">Home</button>
+  <button class="tablink" , onclick="openPage('CV', this, '#D9B5AD')">CV</button>
+  <button class="tablink" , onclick="openPage('Contact', this, '#D9B5AD')">Contact</button>
+  <button class="tablink" , onclick="openPage('Work', this, '#D9B5AD')">Work</button>
+
+  <div id="Home" class="tabcontent">
+    <h3>Home</h3>
+    <p>Velkommen til min side, det er dejligt du er her. Dette er min personlige side, hvor jeg løbende vil opdatere mine projekter, samt fortælle om mig selv. Siden skal vise hvem jeg er og derfor vil den løbende blive opdateret og ændret, så den
+      passer til mig og min udvikling inden for mutimediedesign.
+      Lidt om mig; mit navn er Matilde Skovgaard. Jeg er 24 år gammel og bor i København. Til daglig studerer jeg multimediedesig på Cphbusiness i Lyngby.
+      Udover mit studie, elsker jeg at bruge tid med mine venner og familie. Jeg kan også rigtig godt lide at være kreativ - specielt at fotografere og billedredigering synes jeg er utroligt sjovt.
+      Så igen vil jeg bare sige: Velkommen til mit univers.</p>
+
+<img src="collage.jpg" alt="collage">
+  </div>
+
+  <div id="CV" class="tabcontent">
+    <h3><img src="cv.jpg" alt="cv" class="cv"></h3>
+  </div>
+
+  <div id="Contact" class="tabcontent">
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Me</h2>
+    <p>Skriv hellere end gerne til mig. Udfyld blot formularen:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="8765.jpg" style="width:80%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="denmark">Denmark</option>
+          <option value="sweden">Sweden</option>
+          <option value="norway">Norway</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <div id="Work" class="tabcontent">
+    <h3>Work</h3>
+    <p>Her på siden, vil jeg vise alle de projekter jeg laver igennem min tid på multimediesign-studiet.</p>
+    <img class="photoshopopgave" src="pgotoshopopgave.jpg" alt="photoshopopgave">
+    <p>Min første photoshop opgave på studiet, lavede jeg i den første uge. Billedet er photoshoppet sammen af to billeder, som begge er taget på Christiania.</p>
+  </div>
+
+  <script>
+    function openPage(pageName, elmnt, color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+
+    document.getElementById("defaultOpen").click();
+  </script>
+</body>
+
+</html>

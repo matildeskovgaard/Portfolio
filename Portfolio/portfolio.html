@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+<link rel="stylesheet" href="stylesheet.css">
+
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/brands.min.css" integrity="sha512-AMDXrE+qaoUHsd0DXQJr5dL4m5xmpkGLxXZQik2TvR2VCVKT/XRPQ4e/LTnwl84mCv+eFm92UG6ErWDtGM/Q5Q==" crossorigin="anonymous" />
+
+<img src="multimediadesign.banner.png" alt="logo">
+  <ul class="social">
+    <i id="instagram" class="fab fa-instagram">Instagram</i>
+    <i id="facebook" class="fab fa-facebook-f">Facebook</i>
+    <i id="linkedin" class="fab fa-linkedin">Linkedin</i>
+    <i id="snabela" class="fas fa-at">Email</i>
+    <i id="appstore" class="fab fa-app-store">App</i>
+  </ul>
+
+  <button class="tablink" , onclick="openPage('Home', this, '#D9B5AD')">Home</button>
+  <button class="tablink" , onclick="openPage('CV', this, '#D9B5AD')">CV</button>
+  <button class="tablink" , onclick="openPage('About', this, '#D9B5AD')">About</button>
+  <button class="tablink" , onclick="openPage('Work', this, '#D9B5AD')">My Work</button>
+
+
+
+
+
+
+  <div id="Home" class="tabcontent">
+    <h3>Home</h3>
+    <p>Home is where the heart is</p>
+    <div class="row">
+      <div class="column">
+        <img src="fuckoffplease.grain.copy.png" style="width:100%">
+
+      </div>
+      <div class="column">
+        <img src="williamsburg.wall1.png" style="width:100%">
+
+      </div>
+      <div class="column">
+        <img src="pic.jpg" style="width:100%">
+
+      </div>
+      <div class="column">
+        <img src="best.things.in.life.copy.jpg" style="width:100%">
+
+      </div>
+    </div>
+  </div>
+
+  <div id="CV" class="tabcontent">
+    <p><a class="cvdownload" href="cv.pdf" download>
+        <img src="cv.pdf" alt="Download CV"></a></p>
+    <img class="cvengelsk" src="cvengelsk.jpeg" alt="cv" style="float: center;">
+
+  </div>
+
+  <div id="About" class="tabcontent">
+    <div class="container">
+      <div style="text-align:center">
+        <h2>Contact Me</h2>
+        <p>Do you want to get in touch? Feel free to contact me by simply just fill out this form: </p>
+      </div>
+      <div class="row">
+        <div class="column">
+        <img src="IMG_4226 copy.GIF" style="width:100%;">
+        </div>
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="denmark">Denmark</option>
+              <option value="sweden">Sweden</option>
+              <option value="norway">Norway</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Work" class="tabcontent">
+    <h3>My Work</h3>
+    <p>On this page I will show all the work that ive done through my studies at the multimediadesign programme at Cphbusiness. Ill upload all the work ill finish during all 4 semesters up until i finish my education as a multimediadesigner.</p>
+
+    <button class="accordion"> 1. semester </button>
+    <div class="panel">
+      <img src="pgotoshopopgave.jpg" alt="photoshop">
+     <p class="photoshopopgave">My first school projekt during my first week at the multimediadesign programme. I took two different photos and mixed them together in photoshop. My goal was to create a "Alice in Wonderland" inspired picture. Both pictures are taken in freetown Christiania in Copenhagen.</p>
+    </div>
+
+    <button class="accordion"> 2. semester </button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion"> 3. semester </button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion"> 4. semester </button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+  </div>
+
+  <script>
+    function openPage(pageName, elmnt, color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+
+</body>
+
+</html>

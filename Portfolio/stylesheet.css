@@ -1,0 +1,222 @@
+body {
+  background-color: #E7EAEF;
+  float: center;
+}
+
+h1{
+  color: #E7EAEF;
+}
+
+ul {
+  font-size: 25px;
+  font-family: helvetica letter-spacing: 25%;
+  border: none;
+  outline: none;
+  height: -5%;
+  margin: 0%;
+  text-align: right;
+}
+
+h1{
+  font-family: helvetica;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.cv {
+  float: center;
+}
+
+* {
+  box-sizing: border-box;}
+
+  .body, .html{
+    height: 70%;
+    margin: 0;
+    font-family: helvetica;
+  }
+
+  .tablink{
+    background-color: #BFAAA3;
+    color: #E7EAEF;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+
+.tablink:hover {
+  background-color: #D9B5AD;
+  font-family: helvetica
+}
+
+.tabcontent {
+  color: #E7EAEF;
+  display: none;
+  padding: 100px 20px;
+  height: 100%
+}
+
+#Home {background-color: #D9B5AD;}
+#CV {background-color: #D9B5AD;}
+#About {background-color: #D9B5AD;}
+#Work {background-color: #D9B5AD;}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #D9B5AD;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #E7EAEF;
+  color: #D9B5AD;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #E7EAEF;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #D9B5AD;
+  padding: 20px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 0px;
+  padding: 40px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.cvengelsk{
+  padding: center;
+  width: 70%;
+  float: center;
+}
+
+.cvdownload{
+  background-color: #E7EAEF;
+  border: #D9B5AD;
+  color: #D9B5AD;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: auto;
+}
+
+/*navigation bar in "my work" section*/
+.accordion {
+  background-color: #E7EAEF;
+  color: #D9B5AD;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #E7EAEF;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.photoshopopgave{
+  float: right;
+}
